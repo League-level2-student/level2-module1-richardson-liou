@@ -24,11 +24,21 @@ public class IntroToArrayLists {
 		}
 		//5. Print only the even numbered elements in the list.
 		for(String s : words){
-			if( ==0)
+			if( s.length() % 2 ==0) {
 			System.out.println(s);
+			}
 		}
 		//6. Print all the Strings in reverse order.
-		
+		for(int i = 4; i>-1; i--) {
+			String s =words.get(i);
+			System.out.println(s);
+		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		for(String s : words) {
+			if (s.contains("e")) {
+				System.out.println(s);
+			}
+		}
 	}
 }
+	
